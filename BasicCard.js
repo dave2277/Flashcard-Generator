@@ -5,4 +5,5 @@ var BasicCard = function(front, back) {
     this.back = back;
 };
 
+//Export module code
 export.module = BasicCard;
