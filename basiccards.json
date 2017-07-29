@@ -1,0 +1,102 @@
+[
+        {
+        "topic" : "html",
+        "front" : "This is the element tag used to create a line break",
+        "back" :   "<br>"
+        },
+        {
+        "topic": "html",
+        "front": "This element tag is for images",
+        "back":   "<img>"
+        },
+        {
+        "topic": "html",
+        "front": "The attribute within an <a> tag that contains the link.",
+        "back":   "href"
+        },
+        {
+        "topic" : "html",
+        "front" : "This tag defines a thematic break in an HTML page.",
+        "back" :   "<hr>"
+        },
+        {
+        "topic" : "html",
+        "front" : "The html tag for text that has a strike-through",
+        "back" :   "<del>"
+        },
+        {
+        "topic" : "css",
+        "front" : "The name for the first part of a CSS rule-set",
+        "back" :   "selector"
+        },
+        {
+        "topic" : "css",
+        "front" : "The name for the second part of a CSS rule-set",
+        "back" :   "declaration"
+        },
+        {
+        "topic" : "css",
+        "front" : "Use this type of style to apply a unique style for a single element.",
+        "back" :   "inline"
+        },
+        {
+        "topic" : "css",
+        "front" : "Name for a color value specified in the following format: #RRGGBB",
+        "back" :   "hexadecimal"
+        },
+        {
+        "topic" : "css",
+        "front" : "This CSS property specifies whether to clip content or to add scrollbars if an element too big" ,
+        "back" :   "overflow"
+        },
+        {
+        "topic" : "javascript",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "javascript",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "javascript",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "javascript",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "javascript",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "node",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "node",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "node",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "node",
+        "front" : "" ,
+        "back" :   ""
+        },
+        {
+        "topic" : "node",
+        "front" : "" ,
+        "back" :   ""
+        }
+]

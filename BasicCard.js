@@ -6,4 +6,4 @@ var BasicCard = function(front, back) {
 };
 
 //Export module code
-export.module = BasicCard;
+module.exports = BasicCard;
