@@ -51,52 +51,52 @@
         },
         {
         "topic" : "javascript",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This operator returns the remainder of a division" ,
+        "back" :   "modulus"
         },
         {
         "topic" : "javascript",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "The name for a name-object pair in a Javascript Object." ,
+        "back" :   "property"
         },
         {
         "topic" : "javascript",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This Javascript string method extracts part of a string and returns the extracted part in a new string" ,
+        "back" :   "slice()"
         },
         {
         "topic" : "javascript",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This javascript array creates a new array by merging existing arrays" ,
+        "back" :   "concat()"
         },
         {
         "topic" : "javascript",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This Javascript data type represents one of two values: true or false" ,
+        "back" :   "boolean"
         },
         {
         "topic" : "node",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This is the command to include the built-in file system module" ,
+        "back" :   "var fs = require('fs');"
         },
         {
         "topic" : "node",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This method is used to read files on your machine asyncrhonously." ,
+        "back" :   "fs.readFile()"
         },
         {
         "topic" : "node",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "To enable node to transfer data over the hyper text transfer protocol, you would type this command" ,
+        "back" :   "var http = require('http');"
         },
         {
         "topic" : "node",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "This node file is essentially a manifest about applications, packages, modules, etc." ,
+        "back" :   "package.json"
         },
         {
         "topic" : "node",
-        "front" : "" ,
-        "back" :   ""
+        "front" : "You can send email directly from you machine by installing this node module" ,
+        "back" :   "nodemailer"
         }
 ]

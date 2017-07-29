@@ -1,11 +1,14 @@
 
 var inquirer = require("inquirer");
 var basic = require("./basiccard.js");
-var cloze = require("./ClozeCard.js");
+var cloze = require("./clozecard.js");
 var fs = require('fs');
-var stuff = fs.readFileSync('basiccards.json');
-var cards = JSON.parse(stuff);
+var basicStuff = fs.readFileSync('basiccards.json');
+var cards = JSON.parse(basicStuff);
+var clozeStuff = fs.readFileSync('clozecards.json');
+var clozecards = JSON.parse(clozeStuff);
 var basicFlash;
+var clozeFlash;
 var htmlCards = [];
 var cssCards = [];
 var javascriptCards = [];
@@ -31,14 +34,13 @@ firstPrompt();
 
         ])
             .then(function (answers) {
-            // console.log(JSON.stringify(answers, null, '  '));
                 if (answers.flashcards === "NORMAL") {
 
                     makeBasic(answers.categories);
 
                 } else if (answers.flashcards === "CLOZE") {
 
-                // makeCloze(answers.categories);
+                    makeCloze(answers.categories);
                 }
             });
 
@@ -105,7 +107,63 @@ firstPrompt();
                 });
         }
 
-            function makeCloze() {
-                var clozeFlash = new ClozeCard(x, y, z)
+            function makeCloze(category) {
+
+                if (category === 'HTML') {
+                    for (var i = 0; i < clozecards.length; i++) {
+                        if (clozecards[i].topic === 'html') {
+                            clozeFlash = new cloze(clozecards[i].full, clozecards[i].cloze, clozecards[i].partial);
+                            htmlCards.push(clozeFlash);
+                            var htmlCard = htmlCards[Math.floor(Math.random() * htmlCards.length)];
+                            card = htmlCard;
+                        }
+                    }
+                }   else if (category === 'CSS') {
+                    for (var i = 0; i < clozecards.length; i++) {
+                        if (clozecards[i].topic === 'css') {
+                            clozeFlash = new cloze(clozecards[i].full, clozecards[i].cloze, clozecards[i].partial);
+                            cssCards.push(clozeFlash);
+                            var cssCard = cssCards[Math.floor(Math.random() * cssCards.length)];
+                            card = cssCard;
+                        }
+                    }
+                }   else if (category === 'JAVASCRIPT') {
+                    for (var i = 0; i < clozecards.length; i++) {
+                        if (clozecards[i].topic === 'javascript') {
+                            clozeFlash = new cloze(clozecards[i].full, clozecards[i].cloze, clozecards[i].partial);
+                            javascriptCards.push(clozeFlash);
+                            var javascriptCard = javascriptCards[Math.floor(Math.random() * javascriptCards.length)];
+                            card = javascriptCard;
+                        }
+                    }
+                }   else if (category === 'NODE') {
+                    for (var i = 0; i < clozecards.length; i++) {
+                        if (clozecards[i].topic === 'node') {
+                            clozeFlash = new cloze(clozecards[i].full, clozecards[i].cloze, clozecards[i].partial);
+                            nodeCards.push(clozeFlash);
+                            var nodeCard = nodeCards[Math.floor(Math.random() * nodeCards.length)];
+                            card = nodeCard;
+                        }
+                    }
+                }
+                inquirer.prompt([
+                    {
+                        type: "input",
+                        name: "question",
+                        message: card.partial
+                    }
+                ])
+                    .then(function (answers) {
+
+
+                        if (answers.question === card.cloze) {
+                            console.log("Correct!");
+                            makeCloze(category);
+                        } else {
+                            console.log("That's incorrect.  The correct answer is: " + card.full)
+                            makeCloze(category);
+                        }
+
+                    });
             }
 
